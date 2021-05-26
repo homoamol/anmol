@@ -80,12 +80,11 @@
 
 .slide {
   height: 100vh;
-  background-color: #dc563d;
 }
 .slide__heading {
   font-size: 40px;
   font-family: "Epilogue", sans-serif;
-  color: #f7f8f3;
+  color: #55575a;
   padding-top: 40px;
   margin-left: 100px;
 }
@@ -98,9 +97,15 @@
   width: 250px;
   border-radius: 5px;
   height: 350px;
-  background-color: #f7f8f3;
   margin: 100px 10px;
   color: #55575a;
+  background-size: contain;
+}
+.slide__proj__cards--a {
+  background-image: url("/img/pbn tnl.png");
+}
+.slide__proj__cards--b {
+  background-image: url("/img/ngo ng.png");
 }
 .slide__proj__cards h2 {
   font-family: "Epilogue", sans-serif;
