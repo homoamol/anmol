@@ -20,8 +20,10 @@
   position: fixed;
   bottom: 0;
   border-top: 1px solid $cpr-brw;
-
+  // text-align: center;
   &__link {
+    // text-align: center;
+
     margin: 10px;
     font-size: 25px;
     font-family: $epi;
@@ -41,10 +43,12 @@
     margin: auto;
   }
   &__content {
+    // background-color: #fff;
     display: flex;
     justify-content: space-evenly;
-
+    // width: 80vw;
     align-items: center;
+    // align-content:space-between;
 
     &__text {
       color: $lyt-blk;
@@ -62,6 +66,9 @@
     text-align: center;
 
     i {
+      // border-bottom: 4px solid $cpr-brw;
+      // box-shadow: 1px 1px 4px rgb(175, 175, 175);
+
       padding: 10px;
       font-size: 35px;
       color: $lyt-blk;
@@ -78,46 +85,84 @@
 // Slide Section
 
 .slide {
-  height: 100vh;
-  // background-color: red;
   &__heading {
     font-size: 40px;
     font-family: $epi;
-    color: $lyt-blk;
+    color: $lg-gray;
     padding-top: 40px;
     margin-left: 100px;
   }
-  &__proj {
+  height: 100vh;
+  // width: 80vw;
+  // margin: 0 auto;
+  // display: grid;
+  // grid-template-columns: repeat(2,50%);
+  // font-family: $epi;
+  // font-size: 100px;
+  background-color: $cpr-brw;
+  // font-weight: 600;
+  // align-items: center;
+  // grid-template-rows: 100px 400px;
+  // &__app{
+  //     // background-color: red;
+
+  //     // width: 50%;
+  // } &__web{
+  //     // background-color: rgb(206, 98, 98);
+  //     // width: 50%;
+
+  // } &__graph{
+  //     // background-color: rgb(99, 91, 91);
+  //     // width: 50%;
+
+  // } &__branding{
+  //     // width: 50%;
+
+  //     // background-color: rgb(158, 158, 158);
+  // }
+  // display: flex;
+  // font-weight: 600;
+  // font-family: $epi;
+
     &__card {
       display: flex;
       justify-items: baseline;
+      // align-content: space-between;
       justify-content: center;
+      transition: 0.375s ease-in-out;
+
+      // &.change-color {
+      //   background-color: #fff;
+      // }
     }
     &__cards {
-      width: 250px;
-      border-radius: 5px;
-      height: 350px;
-      margin: 100px 10px;
-      color: $lyt-blk;
-      background-size: contain;
-      // &:hover{
-      //   box-shadow: 1px 1px  4px rgb(121, 121, 121);
-      //   transition: all .2s;
+      border: #333 1px solid;
+      &:nth-child(1) {
+        background-color: pink;
 
-      // }
-      &--a {
-        background-image: url("/img/pbn tnl.png");
-        // -webkit-filter: grayscale(50%);
-        // filter: grayscale(50%); 
+        &:hover {
+          transition: 0.375s ease-in-out;
+          cursor: pointer;
+        }
       }
-      // &--a:hover{
-      //   -webkit-filter: none;
-      //   filter: none;
-      //   transition: all .3s;
-      // }
-      &--b {
-        background-image: url("/img/ngo ng.png");
+      &:nth-child(2) {
+        background-color: burlywood;
+
+        &:hover {
+          transition: 0.375s ease-in-out;
+          cursor: pointer;
+        }
       }
+      &:nth-child(3) {
+        background-color: coral;
+
+        &:hover {
+          transition: 0.375s ease-in-out;
+          cursor: pointer;
+        }
+      }
+
+
       h2 {
         font-family: $epi;
         font-size: 32px;
@@ -126,6 +171,15 @@
         top: 150px;
         text-align: center;
       }
+      width: 250px;
+      border-radius: 5px;
+      height: 350px;
+      // background-color: $lg-gray;
+      margin: 100px 10px;
+
+      color: $lyt-blk;
+      // box-sizing: 1px 1px 4px  #000;
+
     }
   }
 }

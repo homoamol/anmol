@@ -1,0 +1,141 @@
+@keyframes blink {
+  0%, 100% {
+    color: #dc563d;
+  }
+  50% {
+    color: #55575a;
+    transform: translateY(8px);
+    border-radius: solid #000;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.tab {
+  height: 50px;
+  width: 100vw;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  justify-items: center;
+  background-color: #fff;
+  margin: 0 auto;
+  position: fixed;
+  bottom: 0;
+  border-top: 1px solid #dc563d;
+}
+.tab__link {
+  margin: 10px;
+  font-size: 25px;
+  font-family: "Epilogue", sans-serif;
+  text-decoration: none;
+  color: #dc563d;
+  font-weight: 500;
+}
+
+.hero {
+  background-color: #f7f8f3;
+  height: 100vh;
+}
+.hero__logo {
+  height: 80px;
+  width: auto;
+  display: block;
+  padding: 10px;
+  margin: auto;
+}
+.hero__content {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.hero__content__text {
+  color: #55575a;
+  font-size: 100px;
+  font-family: "Epilogue", sans-serif;
+  margin-top: 150px;
+}
+.hero__content__img {
+  width: 500px;
+  height: auto;
+  margin-top: 150px;
+}
+.hero__scroll {
+  text-align: center;
+}
+.hero__scroll i {
+  padding: 10px;
+  font-size: 35px;
+  color: #55575a;
+  margin-top: 60px;
+  padding: 10px;
+  animation-duration: 1500ms;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-name: blink;
+}
+
+.slide {
+  height: 100vh;
+  background-color: #dc563d;
+}
+.slide__heading {
+  font-size: 40px;
+  font-family: "Epilogue", sans-serif;
+  color: #f7f8f3;
+  padding-top: 40px;
+  margin-left: 100px;
+}
+.slide__proj__card {
+  display: flex;
+  justify-items: baseline;
+  justify-content: center;
+  transition: 0.375s ease-in-out;
+}
+.slide__proj__cards {
+  border: #333 1px solid;
+  width: 250px;
+  border-radius: 5px;
+  height: 350px;
+  margin: 100px 10px;
+  color: #55575a;
+}
+.slide__proj__cards:nth-child(1) {
+  background-color: pink;
+}
+.slide__proj__cards:nth-child(1):hover {
+  transition: 0.375s ease-in-out;
+  cursor: pointer;
+}
+.slide__proj__cards:nth-child(2) {
+  background-color: burlywood;
+}
+.slide__proj__cards:nth-child(2):hover {
+  transition: 0.375s ease-in-out;
+  cursor: pointer;
+}
+.slide__proj__cards:nth-child(3) {
+  background-color: coral;
+}
+.slide__proj__cards:nth-child(3):hover {
+  transition: 0.375s ease-in-out;
+  cursor: pointer;
+}
+.slide__proj__cards h2 {
+  font-family: "Epilogue", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  position: relative;
+  top: 150px;
+  text-align: center;
+}
+
+.process {
+  height: 100vh;
+  background-color: #55575a;
+}
+
+/*# sourceMappingURL=base.css.map */
